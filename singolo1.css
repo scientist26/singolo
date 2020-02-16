@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Lato";
+  src: url(./assets/font-face/Lato/Lato-Regular.ttf) format("truetype");
+}
+
+
+/* header section */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1020px;
+  height: 95px;
+  margin: 0 auto;
+  background-color: #2d303a;
+  box-shadow: inset 0px -6px 0px 0px rgba(50,55,70,1);
+}
+
+.header__title-container {
+  width: 30%;
+  height: 100%;
+}
+
+.title {
+  font-size: 25px;
+  line-height: 6px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+.title__name {
+  padding: 41px 0 0 40px;
+}
+
+.title__name--red {
+  color: #e66862;
+}
+
+.header__nav-container {
+  width: 70%;
+  height: 100%;
+}
+
+.site-nav {
+  width: 100%;
+  height: 100%;
+}
+
+.site-nav__list {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 40px;
+}
+
+.site-nav__list-item:before {
+  float: left;
+  width: 2px;
+  height: 2px;
+  margin: 3px 15px 0 0;
+  content: "";
+  background-color: #494e62;
+  overflow: hidden;
+}
+
+.site-nav__list-item--red:before {
+  display: none;
+}
+
+.site-nav__list-item {
+  margin: 46px 0 0 18px;
+  font-size: 12px;
+  line-height: 6px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: right;
+  letter-spacing: -1px;
+}
+
+.site-nav__list-item--red {
+  color: #f06c64;
+}
+
+.site-nav__list-item:hover {
+  cursor: pointer;
+  color: #74b2ca;
+}

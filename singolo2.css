@@ -85,9 +85,9 @@
 }
 
 .portfolio-nav__item:hover {
-  cursor: pointer;
   color: #f2f60b;
   background-color: rgb(148, 119, 245);
+  cursor: pointer;
 }
 
 .portfolio-pattern__list {
@@ -105,4 +105,145 @@
 
 .portfolio-pattern__list li:nth-child(n+13) { 
   display: none;
+}
+
+                                        /* ABOUT US */
+
+.about-us {
+  max-width: 1020px;
+  height: 734px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  box-shadow: inset 0px -6px 0px 0px #ffffff;
+}
+
+.about-us-container {
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.about-us-specialists {
+  margin-top: 18px;
+}
+
+.about-us-description {
+  height: 200px;
+}
+
+.about-us-description__title {
+  padding-top: 68px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+.about-us-description__content {
+  margin-top: 27px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: -0.21px;
+}
+
+.about-us-description__content:first-line {
+  letter-spacing: -0.075px;
+}
+
+.about-us-specialists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specialists__person {
+  width: 300px;
+  height: 443px;
+}
+
+.specialists__person--Desmond {
+  margin-right: 1px;
+}
+
+.person__image {
+  background-color:#464b5e;
+  width: 300px;
+  height: 300px;
+}
+
+.person__title {
+  margin-top: 17px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: -0.2px;
+}
+
+.person__title--Desmond {
+  letter-spacing: -0.2px;
+  margin-right: 1px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.person__title--Scolara {
+  letter-spacing: -0.1px;
+}
+
+.person__skills {
+  margin-top: 9px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+}
+
+.person__skills--Adam span:nth-child(1) {
+  letter-spacing: -0.06px;
+}
+
+.person__skills--Adam span:nth-child(2) {
+  letter-spacing: 0px;
+}
+
+.person__skills--Desmond span:nth-child(1) {
+  letter-spacing: 0.1px;
+}
+
+.person__skills--Desmond span:nth-child(2) {
+  letter-spacing: 0.01px;
+}
+
+.person__skills--Scolara span:nth-child(1) {
+  letter-spacing: 0.11px;
+}
+
+.person__contacts-list {
+  margin-top: 22px;
+}
+
+.person__contacts-list--Scolara {
+  margin-left: -1px;
+}
+
+.person__contacts-list li {
+  display: inline;
+  margin-right: 1px;
+}
+
+.person__contacts-list li img:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(220, 228, 228);
 }

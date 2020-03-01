@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Lato";
+  src: url(./assets/font-face/Lato/Lato-Regular.ttf) format("truetype");
+}
+
+                                        /* GET A QUOTE */
+
+
+.quote {
+  max-width: 1020px;
+  height: 654px;
+  margin: 0 auto;
+  background-color: #f06c64;
+  box-shadow: inset 0px -6px 0px 0px #ea676b;
+}
+
+.quote-container {
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.quote-description {
+  height: 200px;
+}
+
+.quote-description__title {
+  padding-top: 68px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: -0.2px;
+}
+
+.quote-description__content {
+  margin-top: 26px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+}
+
+.quote-description__content span:nth-child(1) {
+  letter-spacing: -0.075px;
+}
+
+.quote-description__content span:nth-child(2) {
+  letter-spacing: -0.22px
+}
+
+.quote-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 370px;
+}
+
+.form-container {
+  width: 619px;
+  height: 100%;
+  padding-top: 17px;
+}
+
+.quote-form__line input, textarea {
+  width: 604px;
+  margin-bottom: 16px;
+  padding: 7px 0 9px 15px;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  background-color: #d6564f;
+}
+
+.quote-form__line input::-webkit-input-placeholder {
+  color: #f48c8f;
+}
+
+.quote-form__line textarea::-webkit-input-placeholder {
+  color: #f48c8f;
+}
+
+.quote-form__line textarea {
+  height: 197px;
+  margin-top: 0px;
+  padding: 5px 0 0 15px;
+  resize: none;
+}
+
+.btn {
+  width: 120px;
+  padding: 8px 14px;
+  border: 1px solid #d6564f;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #d6564f;
+  box-shadow: inset 0px 13px 17px #ffffff;
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.btn:hover {
+  box-shadow: inset 0px -20px 20px #a77575;
+}
+
+.contact-information {
+  width: 300px;
+  padding-top: 17px;
+}
+
+.contact-information__title {
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  letter-spacing: -0.01px;
+}
+
+.contact-information__description {
+  padding-top: 9px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.contact-information__description span:nth-child(1) {
+  letter-spacing: -0.026px;
+}
+
+.contact-information__description span:nth-child(2) {
+  letter-spacing: 0.026px;
+}
+
+.contact-information__description span:nth-child(3) {
+  letter-spacing: 0.176px;
+}
+
+.contact-information__description span:nth-child(4) {
+  letter-spacing: 0.02px;
+}
+
+.contact-information__ways {
+  padding-top: 20px;
+}
+
+.contact {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.contact__telephone a {
+  text-decoration: none;
+  color: #f0d8d9;
+}
+
+.contact__email a {
+  text-decoration: none;
+  color: #f0d8d9;
+}
+
+.contact-information__ways li:nth-child(1) {
+  margin-left: 3px;
+}
+
+.contact__address::before {
+  content: url(./assets/image/get-a-quote/location.png);
+  padding-right: 13px;
+}
+
+.contact-information__ways li:nth-child(2) {
+  margin-left: 1px;
+}
+
+.contact__telephone::before {
+  content: url(./assets/image/get-a-quote/phone.png);
+  padding-right: 11px;
+}
+
+.contact__email::before {
+  content: url(./assets/image/get-a-quote/mail.png);
+  padding-right: 10px;
+}
+

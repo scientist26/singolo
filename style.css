@@ -77,15 +77,14 @@
   margin: 46px 0 0 16px;
   font-size: 12px;
   line-height: 6px;
-  color: #ffffff;
-  font-family: "Lato";
-  font-weight: 700;
-  text-align: right;
   letter-spacing: -1px;
 }
 
-.site-nav__list-item:nth-child(1) {
-
+.item-href {
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .site-nav__list-item:nth-child(2) {
@@ -106,14 +105,20 @@
   letter-spacing: -0.5px;
 }
 
-.site-nav__list-item--red {
+/* .site-nav__list-item--red a {
   color: #f06c64;
-}
+} */
 
-.site-nav__list-item:hover {
+.site-nav__list-item:hover a {
   cursor: pointer;
   color: #74b2ca;
 }
+
+.active {
+  cursor: pointer;
+  color: #74b2ca;
+}
+
 
                                         /* MAIN */
 

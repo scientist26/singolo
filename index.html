@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <title>Singolo</title>
 </head>
-<body>
+<body id="home">
   <header class="header">
     <div class="header__title-container">
       <div class="title">
@@ -17,12 +17,12 @@
     </div>
     <div class="header__nav-container">
       <nav class="site-nav">
-        <ul class="site-nav__list">
-          <li class="site-nav__list-item site-nav__list-item--red">HOME</li>
-          <li class="site-nav__list-item">SERVICES</li>
-          <li class="site-nav__list-item">PORTFOLIO</li>
-          <li class="site-nav__list-item">ABOUT</li>
-          <li class="site-nav__list-item">CONTACT</li>
+        <ul class="site-nav__list" id='nav'>
+          <li class="site-nav__list-item site-nav__list-item--red"><a href="#home" class="item-href">HOME</a></li>
+          <li class="site-nav__list-item"><a href="#services" class="item-href">SERVICES</a></li>
+          <li class="site-nav__list-item"><a href="#portfolio" class="item-href">PORTFOLIO</a></li>
+          <li class="site-nav__list-item"><a href="#about" class="item-href">ABOUT</a></li>
+          <li class="site-nav__list-item"><a href="#contact" class="item-href">CONTACT</a></li>
         </ul>
       </nav>
     </div>
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="services-wrapper">
         <div class="services-container">
           <div class="services__description">
@@ -136,7 +136,7 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="portfolio-container">
         <div class="portfolio-description">
           <h2 class="portfolio-description__title">Portfolio</h2>
@@ -170,7 +170,7 @@
         </div>
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about">
       <div class="about-us-container">
         <div class="about-us-description">
           <h2 class="about-us-description__title">About Us</h2>
@@ -237,7 +237,7 @@
         </div>
       </div>
     </section>
-    <div class="quote">
+    <div class="quote" id="contact">
       <div class="quote-container">
         <div class="quote-description">
           <h2 class="quote-description__title">Get a Quote</h2>
@@ -302,5 +302,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

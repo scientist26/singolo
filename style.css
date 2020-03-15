@@ -145,11 +145,31 @@
   /* padding-right: 2px; */
 }
 
-.devices {
+/* .devices {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
+} */
+
+.devices {
+  display: none;
+  animation: 0.3s ease-in-out;
+  background-color: #f06c64;
+}
+
+.active-item,
+.next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .devices__vertical {
@@ -163,6 +183,15 @@
   height: 240px;
   padding-bottom: 13px;
   padding-right: 1px;
+}
+
+.devices__blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #648BF0;
 }
 
 .control {
@@ -190,6 +219,42 @@
   position: absolute;
   display: inline-block;
   top: 50%;
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
 }
 
                                         /* services */

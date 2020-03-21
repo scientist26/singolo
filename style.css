@@ -4,6 +4,12 @@
 }
 
 
+@font-face {
+  font-family: "Lato-Bold";
+  src: url(./assets/font-face/Lato/Lato-Bold.ttf) format("truetype");
+}
+
+
                                         /* HEADER */
 
 
@@ -112,12 +118,16 @@
 .site-nav__list-item:hover a {
   cursor: pointer;
   color: #74b2ca;
+  
 }
 
 .active {
   cursor: pointer;
   color: #74b2ca;
 }
+
+
+
 
 
                                         /* MAIN */
@@ -574,8 +584,8 @@
 
 .portfolio-nav__item--border {
   padding: 2px 6px 3px 8px;
-  border: 1px solid #c5c5c5;
-  color: #c5c5c5;
+  /* border: 1px solid #c5c5c5;
+  color: #c5c5c5; */
 }
 
 .portfolio-nav__item:nth-child(2) {
@@ -595,6 +605,18 @@
   color: #f2f60b;
   background-color: rgb(148, 119, 245);
   cursor: pointer;
+}
+
+.portfolio-active {
+  border: 1px solid #c5c5c5;
+  color: #f2f60b;
+  background-color: rgb(148, 119, 245);
+}
+
+.image-active {
+  width: 210px;
+  height: 177px;
+  border: 5px solid #F06C64;
 }
 
 .portfolio-pattern__list {
@@ -865,6 +887,59 @@
 .btn:hover {
   box-shadow: inset 0px -20px 20px #a77575;
 }
+
+    .submit {
+      display: none;
+    }
+
+    .submit-window {
+      display: block;
+      position: absolute;
+      left: 40%;
+      width: 300px;
+      height: 200px;
+      background-color: #f48c8f;
+      border-radius: 15px;
+    }
+
+    .submit__send {
+      padding-top: 15px;
+      font-size: 23px;
+      font-family: "Lato", sans-serif;
+      text-align: center;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .submit__subject,
+    .submit__describe {
+      padding: 20px 0 0 20px;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 1px;
+      text-align: justify;
+      text-decoration: underline;
+      color: #ffffff;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .submit__button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+      width: 70px;
+      height: 30px;
+      font-family: "Lato-Bold", sans-serif;
+      color: #ffffff;
+      background-color: #e66b6f;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .submit__button:hover {
+      cursor: pointer;
+      border: 2px solid #a39697;
+    }
 
 .contact-information {
   width: 300px;

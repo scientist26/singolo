@@ -17,7 +17,7 @@
     </div>
     <div class="header__nav-container">
       <nav class="site-nav">
-        <ul class="site-nav__list" id='nav'>
+        <ul class="site-nav__list">
           <li class="site-nav__list-item site-nav__list-item--red"><a href="#home" class="item-href">HOME</a></li>
           <li class="site-nav__list-item"><a href="#services" class="item-href">SERVICES</a></li>
           <li class="site-nav__list-item"><a href="#portfolio" class="item-href">PORTFOLIO</a></li>
@@ -32,7 +32,7 @@
       <div class="slider-wrapper">
 
         <div class="devices-container">
-          <div class="devices">
+          <div class="devices active-item">
             <div class="devices__vertical">
               <img src="./assets/image/iPhone-Vertical.png" alt="iPhone Vertical">
             </div>
@@ -40,7 +40,7 @@
               <img src="./assets/image/iPhone-Horizontal.png" alt="iPhone Horizontal">
             </div>
           </div>
-          <div class="devices active-item">
+          <div class="devices">
             <div class="devices__blue">
               <img src="./assets/image/slider/devices-blue.png" alt="iPhone blue">
             </div>
@@ -255,10 +255,10 @@
         </div>
         <div class="quote-form">
           <div class="form-container">
-            <form method="GET">
+            <form method="GET" name="common">
               <div class="quote-form__line">
                 <input type="text" name="name" placeholder="Name (Required)" required><br>
-                <input type="email" name="email-address" placeholder="Email (Required)" required><br>
+                <input type="email" name="address" placeholder="Email (Required)" required><br>
                 <input type="text" name="subject" placeholder="Subject"><br>
                 <textarea name="comment" placeholder="Describe your project in detail..."></textarea><br>
                 <div class="quote-form__button">
@@ -266,6 +266,12 @@
                 </div>
               </div>
             </form>
+          </div>
+          <div class="submit">
+            <p class="submit__send">Письмо отправлено</p>
+            <p class="submit__subject"></p>
+            <p class="submit__describe"></p>
+            <button type="submit" class="submit__button">Ok</button>
           </div>
           <div class="contact-information">
             <h2 class="contact-information__title">Contact Information</h2>

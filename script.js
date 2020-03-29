@@ -7,6 +7,9 @@ const navList = document.querySelector('.site-nav__list');
 navList.addEventListener('click', () => {
   navList.querySelectorAll('.item-href').forEach(item => item.classList.remove('active'));
   event.target.classList.add('active');
+  NAV.querySelector('.site-nav').classList.toggle('site-nav__active');
+  BURGER_MENU.querySelector('.burger-menu__btn').classList.toggle('burger-menu__active');
+  TITLE.querySelector('.title').classList.toggle('title-active');
 })
 
 
@@ -175,4 +178,20 @@ buttonWindow.addEventListener('click', () => {
 })
 
 
+
+//                    BURGER_MENU
+
+
+
+const BURGER_MENU = document.querySelector('.header__burger-menu');
+const TITLE = document.querySelector('.header__title-container');
+const NAV = document.querySelector('.header__nav-container');
+
+BURGER_MENU.addEventListener('click', () => {
+
+  BURGER_MENU.querySelector('.burger-menu__btn').classList.toggle('burger-menu__active');
+  TITLE.querySelector('.title').classList.toggle('title-active');
+  NAV.querySelector('.site-nav').classList.toggle('site-nav__active');
+  // NAV.querySelector('.site-nav__shadow').classList.toggle('site-nav__shadow--active');
+})
 
